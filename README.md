@@ -60,7 +60,8 @@ and IP · screen recording · updates.
 
 The time sits in the middle of the folded island, with the battery charge next to it on a laptop. And if
 the island gets in the way of your browser's tabs, turn on auto-hide: it leaves the screen and comes back
-when the cursor rests at the very top edge above it.
+when the cursor rests at the very top edge above it. Or name the programs it should keep away from, and
+it will hide only while one of them is in front.
 
 <div align="center">
 <img src="docs/img/en/auto-hide.png" width="860" alt="Auto-hide: the island is hidden, the cursor at the edge of the screen, the island is out">
@@ -117,17 +118,17 @@ once by name; it is never guessed from your network address. The weather is part
 <tr>
 <td valign="top">
 <img src="docs/img/en/command-bar.png" alt="Command bar">
-<b>Command bar.</b> Apps (those from the Store too), recent files, a calculator, unit and currency conversion, web search, a question to the AI. <code>Alt+Space</code>; <code>Ctrl+Enter</code> opens the folder of a program or a file, <code>Ctrl+Shift+Enter</code> starts a program as administrator.
+<b>Command bar.</b> Apps (those from the Store too), recent files, a calculator, unit and currency conversion, web search, a question to the AI, “timer 10 min” and “remind me to call mum at 7 pm”. <code>Alt+Space</code>; <code>Ctrl+Enter</code> opens the folder of a program or a file, <code>Ctrl+Shift+Enter</code> starts a program as administrator.
 </td>
 <td valign="top">
 <img src="docs/img/en/tab-note.png" alt="Note tab">
-<b>Note.</b> A note that saves itself, folders beside it for tasks and ideas, and reminders: pick a line, choose “in 30 min” or type “tomorrow 9:00”, and the island will call you at that time.
+<b>Note, timer and reminders.</b> A note that saves itself, with folders for tasks and ideas. Beside it are a timer (ready lengths or your own, it stays in the pill while it runs) and reminders typed as one phrase: “call mum tomorrow at 9”, “pills every day at 23:00”, “in 20 minutes turn the stove off”.
 </td>
 </tr>
 <tr>
 <td valign="top">
 <img src="docs/img/en/tab-controls.png" alt="Controls tab">
-<b>Controls.</b> Wi-Fi (or the wired network, if you prefer or the computer has no Wi-Fi), Bluetooth and the dark theme in one press; lock, sleep, restart and shut down. The last three ask to be pressed twice.
+<b>Controls.</b> Wi-Fi (or the wired network, if you prefer or the computer has no Wi-Fi), Bluetooth, the VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN and Windows' own connections) and the dark theme in one press; lock, sleep, restart and shut down. The last three ask to be pressed twice.
 </td>
 <td valign="top">
 <img src="docs/img/en/command-controls.png" alt="System commands in the command bar">
@@ -141,7 +142,7 @@ once by name; it is never guessed from your network address. The weather is part
 - **Screenshots** of an area or the whole screen, to the clipboard and to a folder, with markup: arrows, boxes, a marker, text, blur for private data.
 - **Text from the screen (OCR).** Windows' Russian and English recognizers are merged line by line.
 - **QR code from the screen** and a **color picker** with a magnifier and colour history.
-- **Screen recording** to MP4 (H.264 through Media Foundation) or GIF.
+- **Screen recording** to MP4 (H.264 through Media Foundation, 30 or 60 frames per second, normal or high quality) or GIF, into a folder of your choice.
 - **Paste without formatting** on a hotkey.
 - **A light theme** for the island itself: dark, light, or whatever Windows uses.
 - **The island's size** from 80 to 200%: on a big monitor it can be made bigger.
@@ -149,7 +150,9 @@ once by name; it is never guessed from your network address. The weather is part
 - **The island in screenshots and recordings.** By default screen captures leave it out; one setting shows it in screenshots, recordings and streams.
 - **Your own sound devices.** You can choose whose volume the island controls and which microphone it mutes and records, when these are not the defaults of Windows: handy with a virtual mixer. The sound itself is not switched anywhere by this.
 - **Voice to text.** Press the hotkey, speak, press again: the text is on the clipboard (and, if you like, typed straight into the window you were in).
-- **Reminders** that show up as a card with a sound and wait until you answer them.
+- **Reminders and a timer** that show up as a card with a sound and wait until you answer them; reminders can repeat on the days you name.
+- **A choice of player.** When more than one is open, a button in the player picks the one the island shows and controls.
+- **Groups in the launcher.** Drag one shortcut onto another and the two become a group; a group opens above the row.
 - **AI** through any OpenAI-compatible API, with free services one click away.
 - **Two languages.** Russian on Russian-speaking systems, English everywhere else; switch in Settings at any time.
 
@@ -314,7 +317,8 @@ Island висит поверх всех окон, по центру верхне
 
 Посередине свёрнутого острова стоит время, на ноутбуке рядом с ним заряд батареи. А если остров закрывает
 вкладки браузера, включи автоскрытие: он уйдёт за край экрана и вернётся, когда задержишь курсор у самого
-верхнего края над ним.
+верхнего края над ним. А можно назвать программы, в которых остров мешает: тогда он прячется, только пока
+впереди окно одной из них.
 
 <div align="center">
 <img src="docs/img/ru/auto-hide.png" width="860" alt="Автоскрытие: остров спрятан, курсор у края экрана, остров вышел">
@@ -371,17 +375,17 @@ Island висит поверх всех окон, по центру верхне
 <tr>
 <td valign="top">
 <img src="docs/img/ru/command-bar.png" alt="Командная строка">
-<b>Командная строка.</b> Программы (и те, что из Магазина), недавние файлы, калькулятор, перевод единиц и валют, поиск в интернете, вопрос ИИ. <code>Alt+Space</code>; <code>Ctrl+Enter</code> открывает папку программы или файла, <code>Ctrl+Shift+Enter</code> запускает программу от имени администратора.
+<b>Командная строка.</b> Программы (и те, что из Магазина), недавние файлы, калькулятор, перевод единиц и валют, поиск в интернете, вопрос ИИ, «таймер 10 мин» и «напомни позвонить маме завтра в 9». <code>Alt+Space</code>; <code>Ctrl+Enter</code> открывает папку программы или файла, <code>Ctrl+Shift+Enter</code> запускает программу от имени администратора.
 </td>
 <td valign="top">
 <img src="docs/img/ru/tab-note.png" alt="Вкладка «Заметка»">
-<b>Заметка.</b> Заметка, которая сохраняется сама, папки рядом с ней для задач и идей и напоминания: встань на строку, выбери «30 мин» или напиши «завтра 9:00», и остров позовёт тебя в это время.
+<b>Заметка, таймер и напоминания.</b> Заметка, которая сохраняется сама, с папками для задач и идей. Рядом с ней таймер (готовые отрезки или своё время; пока идёт, он виден в пилюле) и напоминания одной фразой: «позвонить маме завтра в 9», «таблетки каждый день в 23:00», «через 20 минут выключить плиту».
 </td>
 </tr>
 <tr>
 <td valign="top">
 <img src="docs/img/ru/tab-controls.png" alt="Вкладка «Управление»">
-<b>Управление.</b> Wi-Fi (или проводная сеть: по выбору или там, где Wi-Fi нет), Bluetooth и тёмная тема одним нажатием; блокировка, сон, перезагрузка и выключение. Три последних просят нажать дважды.
+<b>Управление.</b> Wi-Fi (или проводная сеть: по выбору или там, где Wi-Fi нет), Bluetooth, VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN и подключения самой Windows) и тёмная тема одним нажатием; блокировка, сон, перезагрузка и выключение. Три последних просят нажать дважды.
 </td>
 <td valign="top">
 <img src="docs/img/ru/command-controls.png" alt="Системные команды в командной строке">
@@ -395,7 +399,7 @@ Island висит поверх всех окон, по центру верхне
 - **Скриншоты** области и всего экрана, в буфер и в папку, с разметкой: стрелки, рамки, маркер, текст, размытие личных данных.
 - **Текст с экрана (OCR).** Русский и английский распознаватели Windows склеиваются построчно.
 - **QR-код с экрана** и **пипетка** с лупой и историей цветов.
-- **Запись экрана** в MP4 (H.264 через Media Foundation) или GIF.
+- **Запись экрана** в MP4 (H.264 через Media Foundation, 30 или 60 кадров в секунду, обычное или высокое качество) или GIF, в папку по твоему выбору.
 - **Вставка без форматирования** по горячей клавише.
 - **Светлая тема** самого острова: тёмная, светлая или как в Windows.
 - **Размер острова** от 80 до 200 %: на большом мониторе его можно сделать крупнее.
@@ -403,7 +407,9 @@ Island висит поверх всех окон, по центру верхне
 - **Остров на скриншотах и в записи.** По умолчанию в захват экрана он не попадает; одна настройка показывает его на скриншотах, в записи и на трансляциях.
 - **Свои устройства звука.** Можно выбрать, чью громкость регулирует остров и какой микрофон он выключает и записывает, если это не устройства Windows по умолчанию: удобно с виртуальным микшером. Сам звук при этом никуда не переключается.
 - **Голос в текст.** Нажми сочетание, скажи, нажми ещё раз: текст в буфере (а если хочешь, сразу в окне, где стоял курсор).
-- **Напоминания**: появляются карточкой со звуком и ждут, пока на них не ответят.
+- **Напоминания и таймер**: появляются карточкой со звуком и ждут, пока на них не ответят; напоминания могут повторяться по тем дням, которые назовёшь.
+- **Выбор плеера.** Когда их открыто несколько, кнопка в плеере выбирает, какой из них остров показывает и каким управляет.
+- **Группы в лаунчере.** Перетащи один ярлык на другой, и они станут группой; группа раскрывается над рядом ярлыков.
 - **ИИ** через любой OpenAI-совместимый API; бесплатные сервисы подключаются в один клик.
 - **Два языка.** Русский на русскоязычных системах, английский на остальных; переключается в настройках в любой момент.
 
