@@ -98,7 +98,7 @@ once by name; it is never guessed from your network address. The weather is part
 <tr>
 <td width="50%" valign="top">
 <img src="docs/img/en/tab-clipboard.png" alt="Clipboard tab">
-<b>Clipboard.</b> History of text and images with search and pins. A click pastes the entry into the window you were typing in.
+<b>Clipboard.</b> History of text and images with search and pins. A click pastes the entry into the window you were typing in; a copied picture also opens with a button of its own. Screen recordings land here too: a click pastes the file, and it can be opened or shown in its folder.
 </td>
 <td width="50%" valign="top">
 <img src="docs/img/en/tab-shelf.png" alt="Shelf tab">
@@ -118,11 +118,11 @@ once by name; it is never guessed from your network address. The weather is part
 <tr>
 <td valign="top">
 <img src="docs/img/en/command-bar.png" alt="Command bar">
-<b>Command bar.</b> Apps (those from the Store too), recent files, a calculator, unit and currency conversion, web search, a question to the AI, “timer 10 min” and “remind me to call mum at 7 pm”. <code>Alt+Space</code>; <code>Ctrl+Enter</code> opens the folder of a program or a file, <code>Ctrl+Shift+Enter</code> starts a program as administrator.
+<b>Command bar.</b> Apps (those from the Store too), recent files, a calculator, unit and currency conversion, web search, a question to the AI, “timer 10 min” and “remind me to call mum at 7 pm”; a line after “>” runs in cmd or PowerShell. <code>Alt+Space</code>; <code>Ctrl+Enter</code> opens the folder of a program or a file, <code>Ctrl+Shift+Enter</code> starts a program as administrator.
 </td>
 <td valign="top">
 <img src="docs/img/en/tab-note.png" alt="Note tab">
-<b>Note, timer and reminders.</b> A note that saves itself, with folders for tasks and ideas. Beside it are a timer (ready lengths or your own, it stays in the pill while it runs) and reminders typed as one phrase: “call mum tomorrow at 9”, “pills every day at 23:00”, “in 20 minutes turn the stove off”.
+<b>Note, timer and reminders.</b> A note that saves itself, with folders for tasks and ideas. Beside it are a timer (ready lengths or your own, it stays in the pill while it runs) and reminders typed as one phrase: “call mum tomorrow at 9”, “pills every day at 23:00”, “in 20 minutes turn the stove off”. A reminder can be changed afterwards.
 </td>
 </tr>
 <tr>
@@ -152,7 +152,12 @@ once by name; it is never guessed from your network address. The weather is part
 - **Voice to text.** Press the hotkey, speak, press again: the text is on the clipboard (and, if you like, typed straight into the window you were in).
 - **Reminders and a timer** that show up as a card with a sound and wait until you answer them; reminders can repeat on the days you name.
 - **A choice of player.** When more than one is open, a button in the player picks the one the island shows and controls.
-- **Groups in the launcher.** Drag one shortcut onto another and the two become a group; a group opens above the row.
+- **Groups in the launcher.** Drag one shortcut onto another and the two become a group; a group opens above the row. The plus adds a link: a site, or a command of another program (`steam://run/…`).
+- **Hotkeys for shortcuts.** Any shortcut of the launcher, a link included, can have a hotkey of its own (Settings → Hotkeys).
+- **Where the island stands.** It can be moved along the top edge; with a taskbar at the top of the screen it stands under it.
+- **Through mode.** The folded island lets clicks through and does not open under the cursor: it is in sight and in nobody's way. The settings, a hotkey or the command bar turn the mode on and off.
+- **The edge as an equaliser.** For the liquid island: with music the edge shows the sound by frequency, low on the left and high on the right.
+- **A link to a screenshot.** A button on the screenshot's card uploads it to Imgur or ImgBB with a key of your own (nothing is uploaded until you choose a service) and copies the link.
 - **AI** through any OpenAI-compatible API, with free services one click away.
 - **Two languages.** Russian on Russian-speaking systems, English everywhere else; switch in Settings at any time.
 
@@ -206,6 +211,8 @@ The key costs **$2.99**, never expires, is checked on your computer with no inte
 your own computers.
 
 **[Buy Island Pro](https://app.lava.top/products/53729bb9-e57e-4ee3-b141-9344ad806f01?currency=USD)**, then paste the key into **Settings → Island Pro**.
+
+Like the project? You can **[support its development](https://app.lava.top/3871177473?tabId=donate)** with any sum.
 Visa, Mastercard, Apple Pay and PayPal are accepted.
 
 <div align="center">
@@ -231,6 +238,8 @@ ready-made services, so it takes a minute and can cost nothing:
 | [Groq](https://console.groq.com/keys) | about 1000 requests a day, no card | yes, up to three per message | yes: Whisper, up to 8 hours of speech a day |
 | [Google Gemini](https://aistudio.google.com/apikey) | free tier of AI Studio | yes | yes |
 | [OpenRouter](https://openrouter.ai/keys) | 50 requests a day on free models | yes | no |
+| [DeepSeek](https://platform.deepseek.com/api_keys) | paid | yes | no |
+| OmniRoute | your own gateway on this computer | as its models allow | no |
 
 Pick one, press “Get a key”, paste the key, press “Test”. Any other OpenAI-compatible address works too.
 These three services do not answer requests from Russia; there they need a VPN.
@@ -355,7 +364,7 @@ Island висит поверх всех окон, по центру верхне
 <tr>
 <td width="50%" valign="top">
 <img src="docs/img/ru/tab-clipboard.png" alt="Вкладка «Буфер»">
-<b>Буфер.</b> История текста и картинок с поиском и закреплением. Клик вставляет запись в окно, где ты печатал.
+<b>Буфер.</b> История текста и картинок с поиском и закреплением. Клик вставляет запись в окно, где ты печатал; скопированную картинку можно ещё и открыть своей кнопкой. Записи экрана попадают сюда же: клик вставляет файл, его можно открыть или показать в папке.
 </td>
 <td width="50%" valign="top">
 <img src="docs/img/ru/tab-shelf.png" alt="Вкладка «Полка»">
@@ -375,11 +384,11 @@ Island висит поверх всех окон, по центру верхне
 <tr>
 <td valign="top">
 <img src="docs/img/ru/command-bar.png" alt="Командная строка">
-<b>Командная строка.</b> Программы (и те, что из Магазина), недавние файлы, калькулятор, перевод единиц и валют, поиск в интернете, вопрос ИИ, «таймер 10 мин» и «напомни позвонить маме завтра в 9». <code>Alt+Space</code>; <code>Ctrl+Enter</code> открывает папку программы или файла, <code>Ctrl+Shift+Enter</code> запускает программу от имени администратора.
+<b>Командная строка.</b> Программы (и те, что из Магазина), недавние файлы, калькулятор, перевод единиц и валют, поиск в интернете, вопрос ИИ, «таймер 10 мин» и «напомни позвонить маме завтра в 9»; строка после «>» выполняется в cmd или PowerShell. <code>Alt+Space</code>; <code>Ctrl+Enter</code> открывает папку программы или файла, <code>Ctrl+Shift+Enter</code> запускает программу от имени администратора.
 </td>
 <td valign="top">
 <img src="docs/img/ru/tab-note.png" alt="Вкладка «Заметка»">
-<b>Заметка, таймер и напоминания.</b> Заметка, которая сохраняется сама, с папками для задач и идей. Рядом с ней таймер (готовые отрезки или своё время; пока идёт, он виден в пилюле) и напоминания одной фразой: «позвонить маме завтра в 9», «таблетки каждый день в 23:00», «через 20 минут выключить плиту».
+<b>Заметка, таймер и напоминания.</b> Заметка, которая сохраняется сама, с папками для задач и идей. Рядом с ней таймер (готовые отрезки или своё время; пока идёт, он виден в пилюле) и напоминания одной фразой: «позвонить маме завтра в 9», «таблетки каждый день в 23:00», «через 20 минут выключить плиту». Напоминание можно изменить и после.
 </td>
 </tr>
 <tr>
@@ -409,7 +418,12 @@ Island висит поверх всех окон, по центру верхне
 - **Голос в текст.** Нажми сочетание, скажи, нажми ещё раз: текст в буфере (а если хочешь, сразу в окне, где стоял курсор).
 - **Напоминания и таймер**: появляются карточкой со звуком и ждут, пока на них не ответят; напоминания могут повторяться по тем дням, которые назовёшь.
 - **Выбор плеера.** Когда их открыто несколько, кнопка в плеере выбирает, какой из них остров показывает и каким управляет.
-- **Группы в лаунчере.** Перетащи один ярлык на другой, и они станут группой; группа раскрывается над рядом ярлыков.
+- **Группы в лаунчере.** Перетащи один ярлык на другой, и они станут группой; группа раскрывается над рядом ярлыков. Плюс добавляет ссылку: сайт или команду другой программы (`steam://run/…`).
+- **Клавиши для ярлыков.** Любому ярлыку лаунчера, и ссылке тоже, можно дать свою горячую клавишу (Настройки → Клавиши).
+- **Где стоит остров.** Его можно сдвинуть вдоль верхнего края; с панелью задач вверху экрана он встаёт под неё.
+- **Сквозной режим.** Свёрнутый остров пропускает клики и не раскрывается под курсором: он на виду и ничему не мешает. Включается и выключается в настройках, клавишей или из командной строки.
+- **Край-эквалайзер.** У жидкого острова: при музыке край показывает звук по частотам, слева низкие, справа высокие.
+- **Ссылка на скриншот.** Кнопка на карточке скриншота загружает его на Imgur или ImgBB со своим ключом (пока сервис не выбран, ничего не загружается) и копирует ссылку.
 - **ИИ** через любой OpenAI-совместимый API; бесплатные сервисы подключаются в один клик.
 - **Два языка.** Русский на русскоязычных системах, английский на остальных; переключается в настройках в любой момент.
 
@@ -463,6 +477,8 @@ Island бесплатный, и большая его часть остаётс�
 своих компьютеров.
 
 **[Купить Island Pro](https://app.lava.top/products/53729bb9-e57e-4ee3-b141-9344ad806f01?currency=RUB)**, потом вставь ключ в **Настройки → Island Pro**.
+
+Нравится проект? Его развитие можно **[поддержать](https://app.lava.top/3871177473?tabId=donate)** любой суммой.
 Оплата картой или через СБП.
 
 <div align="center">
@@ -489,10 +505,13 @@ Island обновляется сам: проверяет новую версию
 | [Google Gemini](https://aistudio.google.com/apikey) | бесплатный тариф AI Studio | да | да |
 | [OpenRouter](https://openrouter.ai/keys) | 50 запросов в день на бесплатных моделях | да | нет |
 | APINET | платно, в рублях | да | — |
+| [DeepSeek](https://platform.deepseek.com/api_keys) | платно, российские карты не принимает | да | — |
+| [Polza.ai](https://polza.ai) | платно, в рублях | да | — |
+| OmniRoute | свой шлюз на этом компьютере | как у его моделей | — |
 
 Выбери сервис, нажми «Получить ключ», вставь ключ, нажми «Проверить». Подойдёт и любой другой
 OpenAI-совместимый адрес. Groq, Gemini и OpenRouter не отвечают на запросы из России: с ними нужен VPN.
-APINET работает без него.
+APINET, DeepSeek и Polza.ai отвечают без него.
 
 <div align="center">
 <img src="docs/img/ru/settings-ai.png" width="860" alt="Настройки: сервисы ИИ с бесплатными вариантами и голос в текст">
