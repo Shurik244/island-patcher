@@ -56,7 +56,7 @@ Events show up on their own and fold away a moment later:
 
 Music with an equalizer · dictation with a voice meter · reminders · downloads, not only from the browser · microphone and
 camera dots with a mute button · volume by mouse wheel · keyboard layout and Caps Lock · VPN with country
-and IP · screen recording · Steam downloads · OBS recording and stream · updates.
+and IP · screen recording · Steam downloads · OBS recording and stream · AI agents at work (Claude Code, Codex) · updates.
 
 The time sits in the middle of the folded island, with the battery charge next to it on a laptop. And if
 the island gets in the way of your browser's tabs, turn on auto-hide: it leaves the screen and comes back
@@ -122,13 +122,13 @@ once by name; it is never guessed from your network address. The weather is part
 </td>
 <td valign="top">
 <img src="docs/img/en/tab-note.png" alt="Note tab">
-<b>Note, timer and reminders.</b> A note that saves itself, with folders for tasks and ideas. Beside it are a timer (ready lengths or your own, it stays in the pill while it runs) and reminders typed as one phrase: “call mum tomorrow at 9”, “pills every day at 23:00”, “in 20 minutes turn the stove off”. A reminder can be changed afterwards.
+<b>Note, timer and reminders.</b> A note that saves itself, with formatting (bold, italic, struck, marked with a colour, lists, numbered lists and tasks with ticks) and folders for tasks and ideas. Beside it are a timer (ready lengths or your own, it stays in the pill while it runs) and reminders typed as one phrase: “call mum tomorrow at 9”, “pills every day at 23:00”, “in 20 minutes turn the stove off”. A reminder can be changed afterwards.
 </td>
 </tr>
 <tr>
 <td valign="top">
 <img src="docs/img/en/tab-controls.png" alt="Controls tab">
-<b>Controls.</b> Wi-Fi (or the wired network, if you prefer or the computer has no Wi-Fi), Bluetooth, the VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN and Windows' own connections) and the dark theme in one press (the VPN has a key of its own too); lock, sleep, restart and shut down. The last three ask to be pressed twice.
+<b>Controls.</b> Wi-Fi (or the wired network, if you prefer or the computer has no Wi-Fi), Bluetooth (with its paired devices: the charge, and headphones and speakers connected in one press), the VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN and Windows' own connections) and the dark theme in one press (the VPN has a key of its own too); lock, sleep, restart and shut down. The last three ask to be pressed twice.
 </td>
 <td valign="top">
 <img src="docs/img/en/command-controls.png" alt="System commands in the command bar">
@@ -154,7 +154,10 @@ once by name; it is never guessed from your network address. The weather is part
 - **A choice of player.** When more than one is open, a button in the player picks the one the island shows and controls.
 - **Groups in the launcher.** Drag one shortcut onto another and the two become a group; a group opens above the row. The plus adds a link: a site, or a command of another program (`steam://run/…`); its icon is found by itself (the site's or the app's) or picked from a file, and a right click changes the link.
 - **Hotkeys for shortcuts.** Any shortcut of the launcher, a link included, can have a hotkey of its own (Settings → Hotkeys).
-- **Where the island stands.** It can be moved along the top edge; with a taskbar at the top of the screen it stands under it.
+- **Where the island stands.** On the monitor of your choice, moved along its top edge; with a taskbar at the top of the screen it stands under it.
+- **The pill while music plays.** The usual one, a wider one with the track's name and a thin bar of its time, or a mini player: the cover, the track, the bar and the buttons right in the pill.
+- **The song's words in time with the music.** In the mini player and in a pill of its own, the line being sung lights up. Free, turned on in the settings; the words come from the open [LRCLIB](https://lrclib.net/) base, only for the song that plays.
+- **AI agents in a terminal** (Island Pro). Claude Code and Codex tell the island what they do: the pill shows that an agent is working, waits for an answer or is done, and a card comes with its question or the beginning of its answer. Connected in Settings with one press.
 - **Through mode.** The folded island lets clicks through and does not open under the cursor: it is in sight and in nobody's way. The settings, a hotkey or the command bar turn the mode on and off.
 - **The edge as an equaliser.** For the liquid island: with music the edge shows the sound by frequency, low on the left and high on the right.
 - **A link to a screenshot.** A button on the screenshot's card uploads it to Imgur or ImgBB with a key of your own (nothing is uploaded until you choose a service) and copies the link.
@@ -203,7 +206,8 @@ liquid island and three characters (Pixel, Spark and Eyes).
 - the other 22 characters;
 - the weather: the forecast tab, the temperature on the island, warnings about rain and snow;
 - the AI (the chat, text actions, a question from the command bar) and voice to text, both with your own key from an AI service, free ones included;
-- screen recording and text from the screen.
+- screen recording and text from the screen;
+- the status of AI agents in a terminal (Claude Code, Codex) on the island.
 
 For the first 14 days all of Pro is open, so you can try everything before you decide. After that the
 free part keeps working, and nothing you saved is lost.
@@ -263,6 +267,7 @@ Island works on your computer and keeps its data there.
 - Keys are encrypted by Windows (DPAPI) for the current user and leave the computer only in requests to the service they were issued for. No key is built into the app.
 - The Island Pro key is checked on your computer and is not sent anywhere.
 - What you dictate and what you attach in the chat goes to the service you chose, and nowhere else. A recording is not kept after it is recognised.
+- What AI agents tell the island goes to it on this very computer and is kept nowhere. To connect them, the island adds its own lines to their settings (Claude Code's hooks, Codex's notify), and a copy of the file is kept beside it.
 - Notifications of other programs are read from Windows only when you turn that on; they are shown and kept nowhere. The names of your files, by which the command bar finds them, are held in memory only.
 - Network requests, all of them optional or obvious: the AI endpoint you set up, the update check on GitHub, the forecast for the city you chose (api.met.no; only its coordinates are sent), the city search when you look one up (nominatim.openstreetmap.org; what you typed), Bank of Russia exchange rates for the currency converter (cbr-xml-daily.ru), a country/IP lookup for the VPN chip (ipwho.is; can be switched off), the site of a link you add to the launcher, for its icon (only that site, only while the icon is found by itself), and OBS on this very computer (127.0.0.1) when you turn its status on.
 - The island and the selection overlay are excluded from screen capture, so they never end up in your screenshots.
@@ -324,7 +329,7 @@ Island висит поверх всех окон, по центру верхне
 
 Музыка с эквалайзером · диктовка с индикатором голоса · напоминания · загрузки не только из браузера · точки
 микрофона и камеры с кнопкой отключения · громкость колесом мыши · раскладка и Caps Lock · VPN со страной
-и IP · запись экрана · загрузки Steam · запись и трансляция OBS · обновления.
+и IP · запись экрана · загрузки Steam · запись и трансляция OBS · работа ИИ-агентов (Claude Code, Codex) · обновления.
 
 Посередине свёрнутого острова стоит время, на ноутбуке рядом с ним заряд батареи. А если остров закрывает
 вкладки браузера, включи автоскрытие: он уйдёт за край экрана и вернётся, когда задержишь курсор у самого
@@ -390,13 +395,13 @@ Island висит поверх всех окон, по центру верхне
 </td>
 <td valign="top">
 <img src="docs/img/ru/tab-note.png" alt="Вкладка «Заметка»">
-<b>Заметка, таймер и напоминания.</b> Заметка, которая сохраняется сама, с папками для задач и идей. Рядом с ней таймер (готовые отрезки или своё время; пока идёт, он виден в пилюле) и напоминания одной фразой: «позвонить маме завтра в 9», «таблетки каждый день в 23:00», «через 20 минут выключить плиту». Напоминание можно изменить и после.
+<b>Заметка, таймер и напоминания.</b> Заметка, которая сохраняется сама, с форматированием (жирный, курсив, зачёркнутый, выделение цветом, списки, нумерованные списки и задачи с галочками) и папками для задач и идей. Рядом с ней таймер (готовые отрезки или своё время; пока идёт, он виден в пилюле) и напоминания одной фразой: «позвонить маме завтра в 9», «таблетки каждый день в 23:00», «через 20 минут выключить плиту». Напоминание можно изменить и после.
 </td>
 </tr>
 <tr>
 <td valign="top">
 <img src="docs/img/ru/tab-controls.png" alt="Вкладка «Управление»">
-<b>Управление.</b> Wi-Fi (или проводная сеть: по выбору или там, где Wi-Fi нет), Bluetooth, VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN и подключения самой Windows) и тёмная тема одним нажатием (у VPN есть и своя клавиша); блокировка, сон, перезагрузка и выключение. Три последних просят нажать дважды.
+<b>Управление.</b> Wi-Fi (или проводная сеть: по выбору или там, где Wi-Fi нет), Bluetooth (со списком устройств: заряд, а наушники и колонки подключаются в одно нажатие), VPN (Happ, v2RayTun, Karing, Cloudflare WARP, Mullvad, Private Internet Access, Windscribe, OpenVPN и подключения самой Windows) и тёмная тема одним нажатием (у VPN есть и своя клавиша); блокировка, сон, перезагрузка и выключение. Три последних просят нажать дважды.
 </td>
 <td valign="top">
 <img src="docs/img/ru/command-controls.png" alt="Системные команды в командной строке">
@@ -422,7 +427,10 @@ Island висит поверх всех окон, по центру верхне
 - **Выбор плеера.** Когда их открыто несколько, кнопка в плеере выбирает, какой из них остров показывает и каким управляет.
 - **Группы в лаунчере.** Перетащи один ярлык на другой, и они станут группой; группа раскрывается над рядом ярлыков. Плюс добавляет ссылку: сайт или команду другой программы (`steam://run/…`); значок подтягивается сам (сайта или программы) или берётся из файла, а правый клик по ссылке её меняет.
 - **Клавиши для ярлыков.** Любому ярлыку лаунчера, и ссылке тоже, можно дать свою горячую клавишу (Настройки → Клавиши).
-- **Где стоит остров.** Его можно сдвинуть вдоль верхнего края; с панелью задач вверху экрана он встаёт под неё.
+- **Где стоит остров.** На выбранном мониторе, со сдвигом вдоль его верхнего края; с панелью задач вверху экрана он встаёт под неё.
+- **Пилюля во время музыки.** Обычная, пошире с названием трека и тонкой полосой времени или мини-плеер: обложка, трек, полоса и кнопки прямо в пилюле.
+- **Текст песни в такт музыке.** В мини-плеере и в своей пилюле подсвечивается строка, которая звучит сейчас. Бесплатно, включается в настройках; тексты — из открытой базы [LRCLIB](https://lrclib.net/), только для играющей песни.
+- **ИИ-агенты в терминале** (Island Pro). Claude Code и Codex сообщают острову, что делают: в пилюле видно, что агент работает, ждёт ответа или закончил, а карточка приходит с его вопросом или началом ответа. Подключаются в настройках одним нажатием.
 - **Сквозной режим.** Свёрнутый остров пропускает клики и не раскрывается под курсором: он на виду и ничему не мешает. Включается и выключается в настройках, клавишей или из командной строки.
 - **Край-эквалайзер.** У жидкого острова: при музыке край показывает звук по частотам, слева низкие, справа высокие.
 - **Ссылка на скриншот.** Кнопка на карточке скриншота загружает его на Imgur или ImgBB со своим ключом (пока сервис не выбран, ничего не загружается) и копирует ссылку.
@@ -471,7 +479,8 @@ Island бесплатный, и большая его часть остаётс�
 - остальных 22 персонажей;
 - погоду: вкладку с прогнозом, температуру на острове, предупреждения о дожде и снеге;
 - ИИ (чат, действия с текстом, вопрос из командной строки) и голос в текст — со своим ключом сервиса ИИ, в том числе бесплатного;
-- запись экрана и текст с экрана.
+- запись экрана и текст с экрана;
+- статус ИИ-агентов в терминале (Claude Code, Codex) на острове.
 
 Первые 14 дней весь Pro открыт, так что всё можно попробовать до покупки. Потом бесплатная часть
 продолжает работать, и ничего из сохранённого не пропадает.
@@ -534,6 +543,7 @@ Island работает на твоём компьютере и хранит д�
 - Ключи шифруются Windows (DPAPI) для текущего пользователя и покидают компьютер только в запросах к тому сервису, для которого выданы. В программу не вшит ни один ключ.
 - Ключ Island Pro проверяется на твоём компьютере и никуда не отправляется.
 - То, что ты диктуешь и прикладываешь в чате, уходит в выбранный тобой сервис и больше никуда. Запись голоса после распознавания не хранится.
+- То, что сообщают ИИ-агенты, приходит острову на этом же компьютере и нигде не сохраняется. Чтобы их подключить, остров дописывает свои строки в их настройки (хуки Claude Code, notify у Codex), копия файла остаётся рядом.
 - Уведомления других программ остров читает у Windows, только когда ты это включил; он их показывает и нигде не сохраняет. Имена твоих файлов, по которым их находит командная строка, держатся только в памяти.
 - Сетевые запросы, все необязательные или очевидные: настроенный тобой адрес ИИ, проверка обновлений на GitHub, прогноз для выбранного города (api.met.no; уходят только его координаты), поиск города, когда ты его ищешь (nominatim.openstreetmap.org; уходит набранное название), курсы ЦБ для конвертера валют (cbr-xml-daily.ru), определение страны и IP для значка VPN (ipwho.is; отключается), сайт ссылки, которую ты добавил в лаунчер, ради её значка (только этот сайт и только пока значок подтягивается сам), и OBS на этом же компьютере (127.0.0.1), если включить его статус.
 - Остров и окно выделения исключены из захвата экрана, поэтому не попадают на твои скриншоты.
